@@ -1,5 +1,5 @@
 <?php 
-$conn = mysqli_connect("localhost", "moskharm_user", "g8N7a6O5d4S3e2T1", "moskharm_game");
+$conn = mysqli_connect("localhost", "root", "tesdoang", "moskharm_game");
 $result = mysqli_query($conn, "SELECT no FROM catur");
 
 if (isset($_POST['oldroom'])) {
@@ -13,7 +13,7 @@ if (isset($_POST['oldroom'])) {
 	    }
 	}
 	if ($penanda == 1) {
-		header("Location: https://moskhar.my.id/projectGame/catur/" . $warna . ".php?room=$cariRoom");
+		header("Location: " . $warna . ".php?room=$cariRoom");
 	}else{echo("<script>alert('ROOM TIDAK DITEMUKAN !!!')");}
 
 
@@ -31,7 +31,7 @@ if (isset($_POST['oldroom'])) {
 	    ('$vlu','','','')";
 	mysqli_query($conn,$query);
 	$room = ((($vlu)*450505)+10)/5;
-	header("Location: https://moskhar.my.id/projectGame/catur/" . $warna . ".php?room=$room");
+	header("Location: " . $warna . ".php?room=$room");
 }
 
 

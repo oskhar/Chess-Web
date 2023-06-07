@@ -198,7 +198,7 @@ var banyakJalan = 1;
 $roomCode = $_GET['room'];
 $room = (($roomCode*5)-10)/450505;
 
-$conn = mysqli_connect("localhost", "moskharm_user", "g8N7a6O5d4S3e2T1", "moskharm_game");
+$conn = mysqli_connect("localhost", "root", "tesdoang", "moskharm_game");
 $result1 = mysqli_query($conn, "SELECT komponen FROM catur WHERE no='$room'");
 $komponen = mysqli_fetch_assoc($result1);
 $komponen = $komponen['komponen'];

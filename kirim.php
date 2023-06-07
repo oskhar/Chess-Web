@@ -1,5 +1,5 @@
 <?php 
-$conn = mysqli_connect("localhost", "moskharm_user", "g8N7a6O5d4S3e2T1", "moskharm_game");
+$conn = mysqli_connect("localhost", "root", "tesdoang", "moskharm_game");
 
 $room = $_POST['room'];
 $result1 = mysqli_query($conn, "SELECT komponen FROM catur WHERE no='$room'");
